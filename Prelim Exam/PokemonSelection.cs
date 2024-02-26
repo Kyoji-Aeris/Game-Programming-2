@@ -11,7 +11,7 @@ public class PokemonSelection : MonoBehaviour
     public GameObject pokemonButtonPrefab;
     public PokemonInfoView pokemonInfoView;
     public GameObject panelInfo;
-    void Start()
+    public void OnClick()
     {
         Debug.Log(pokemonManager.pokemons.Count());
         foreach (Pokemon p in pokemonManager.pokemons)

@@ -7,7 +7,7 @@ public class PokemonManager : MonoBehaviour
     public Pokemon[] pokemons;
     private string folderPath = "Pokemon"; // Folder name inside the Assets/Resources folder
 
-    void Start()
+    void Update()
     {
         pokemons = Resources.LoadAll<Pokemon>(folderPath);
     }
